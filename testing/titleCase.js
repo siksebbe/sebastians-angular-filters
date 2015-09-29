@@ -3,7 +3,7 @@ describe('The titleCase filter', function () {
 	it('change to titleCase', function () {
 		inject(function (titleCaseFilter) {
 
-			expect(titleCaseFilter('sEbAsTiAn')).toEqual('Sebastian');
+			expect(titleCaseFilter('sEbAsTiAn-gr')).toEqual('Sebastian-Gr');
 		});
 	});
 });

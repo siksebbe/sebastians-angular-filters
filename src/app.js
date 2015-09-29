@@ -16,9 +16,15 @@ angular.module('sebastiansFilters', [])
 	}).filter('titleCase', function () {
 		return function (input) {
 			input = input || '';
-			return input.replace(/\w\S*/g, function (txt) {
-				return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-			});
+			if (input.indexOf('-') > -1) {
+				return (input || '').toLowerCase().replace(/(\b|-)\w/g, function (m) {
+					return m.toUpperCase();
+				});
+			} else {
+				return input.replace(/\w\S*/g, function (txt) {
+					return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+				});
+			}
 		};
 	}).filter('arraySort', function () {
 		return function (input) {
