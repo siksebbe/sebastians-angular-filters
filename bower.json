@@ -1,0 +1,24 @@
+{
+  "name": "sebastians-angular-filters",
+  "version": "1.0.0",
+  "homepage": "https://github.com/siksebbe/sebastians-angular-filters",
+  "authors": [
+    "Sebastian Graveleij <siksebbe@hotmail.com>"
+  ],
+  "description": "angular-filters",
+  "main": "app.js",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.6"
+  }
+}
