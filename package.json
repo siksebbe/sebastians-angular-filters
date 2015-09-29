@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/siksebbe/sebastians-angular-filters/issues"
   },
-  "homepage": "https://github.com/siksebbe/sebastians-angular-filters"
+  "homepage": "https://github.com/siksebbe/sebastians-angular-filters",
+  "devDependencies": {
+    "karma": "^0.13.10",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-jasmine": "^0.3.6"
+  }
 }

@@ -13,4 +13,23 @@ angular.module('sebastiansFilters', [])
 				return input;
 			}
 		};
+	}).filter('titleCase', function () {
+		return function (input) {
+			input = input || '';
+			return input.replace(/\w\S*/g, function (txt) {
+				return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+			});
+		};
+	}).filter('arraySort', function () {
+		return function (input) {
+			var i;
+			var out = [];
+			i = input;
+			for (var q = 0; q < i.length; q++) {
+				if (-1 === out.indexOf(i[q])) {
+					out.push(i[q]);
+				}
+			}
+			return out;
+		};
 	});
